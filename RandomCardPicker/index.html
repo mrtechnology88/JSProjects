@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Card Picker Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex justify-center items-center">
+
+    <div class="text-center space-y-6">
+      <!-- Image with Tailwind effect -->
+      <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+        <a href="#">
+          <img class="rounded-lg" src="A_face-up_deck_of_cards.jpg" alt="Deck Of Cards">
+        </a>
+      </figure>
+
+        <h1 class="text-3xl font-bold text-gray-800">Random Card Picker Game</h1>
+
+        <!-- Button with Tailwind hover effect -->
+        <button id="pickCardBtn" class="px-6 py-3 text-white font-semibold bg-green-500 rounded-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-110 hover:bg-green-600 hover:shadow-2xl">
+          Pick a Card
+        </button>
+
+        <!-- Result area -->
+        <p id="result" class="mt-6 text-2xl font-bold text-gray-800"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
